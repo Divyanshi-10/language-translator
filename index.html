@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Language Translator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+     <div class="container">
+ <div class="theme-container">
+    <button id="themeBtn">
+        🌙 Dark Mode
+    </button>
+</div>
+    <h1>Language Translator</h1>
+    
+    <p class="subtitle">
+    Translate text instantly between multiple languages.
+</p>
+<textarea
+    id="inputText"
+    placeholder="Enter text here">
+</textarea>
+
+<select id="sourceLang">
+    </select>
+
+<button id="swapBtn">   
+    ⇄
+</button>
+
+    <select id="targetLang">
+    </select>
+
+    <button id="translateBtn">
+    Translate
+</button>
+
+<textarea
+    id="outputText"
+    placeholder="Translation appears here"
+    readonly>
+</textarea>
+
+
+
+<button id="copyBtn">
+    Copy Translation
+</button>
+
+<button id="speakBtn">
+    🔊 Speak Translation
+</button>
+
+<h3>Translation History</h3>
+
+<ul id="historyList">
+</ul>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+</html>
