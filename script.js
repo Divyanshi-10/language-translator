@@ -147,7 +147,16 @@ speakBtn.addEventListener("click", function () {
     window.speechSynthesis.cancel();
 
     // STEP 5: set language (optional but good)
-    speech.lang = targetLang.value;
+    const speechLanguages = {
+    en: "en-US",
+    hi: "hi-IN",
+    fr: "fr-FR",
+    es: "es-ES",
+    de: "de-DE",
+    ja: "ja-JP"
+};
+
+speech.lang = speechLanguages[targetLang.value];
 
     // STEP 6: speak
     window.speechSynthesis.speak(speech);
