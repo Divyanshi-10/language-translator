@@ -63,7 +63,8 @@ translateBtn.addEventListener("click", async function () {
     );
 
     const data = await response.json();
-    console.log(data);
+    
+console.log("DATA:", data);
     document.getElementById("outputText").value =
         data.translatedText;
 
@@ -72,7 +73,7 @@ translateBtn.addEventListener("click", async function () {
         translated: data.translatedText
     });
 
-    console.log(history);
+    //console.log(history);
 
     const historyList =
     document.getElementById("historyList");
