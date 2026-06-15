@@ -46,7 +46,7 @@ translateBtn.addEventListener("click", async function () {
     document.getElementById("outputText").value = "Translating...";
 
     const response = await fetch(
-        "http://localhost:3000/translate",
+        "https://language-translator-production-aaf8.up.railway.app",
         {
             method: "POST",
 
