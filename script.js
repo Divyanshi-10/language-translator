@@ -65,11 +65,10 @@ translateBtn.addEventListener("click", async function () {
     const data = await response.json();
     
 console.log("DATA:", data);
-  alert("DATA = " + JSON.stringify(data));
-
+ 
 document.getElementById("outputText").value =
-    JSON.stringify(data);
-
+    data.translatedText;
+    
     history.push({
         original: inputText,
         translated: data.translatedText
